@@ -18,4 +18,7 @@ function colorirDia(){
             alert("Favor, informar uma data constante no calnedario");
         }
     }
+
+    var elementos = document.querySelectorAll('td');
+
 }
