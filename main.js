@@ -33,15 +33,22 @@ function colorirDia(){
         //verifica a cor e incrementa o contador corrspondente
         if(corEstilo === "rgb(173, 216, 230)" || corEstilo === "lightblue"){
             contadorAzul++;
+            document.getElementById("contadorAzul").innerHTML = contadorAzul;
         }
         else if(corEstilo === "rgb(152, 251, 152)" || corEstilo === "palegreen"){
             contadorVerde++;
+            document.getElementById("contadorVerde").innerHTML = contadorVerde;
+
         }
         else if(corEstilo === "rgb(255, 182, 193)" || corEstilo === "lightpink"){
             contadorRosa++;
+            document.getElementById("contadorRosa").innerHTML = contadorRosa;
+
         }
         else if(corEstilo === "rgb(106, 90, 205)" || corEstilo === "slateblue"){
             contadorRoxo++;
+            document.getElementById("contadorRoxo").innerHTML = contadorRoxo;
+
         }
     }
 
