@@ -12,7 +12,7 @@ function colorirDia(){
     }
     else{
         if((days > 0) && (days <31)){
-            let td = calendar.getElementsByTagName('td');
+            let td = calendar.getElementsByTagName('td')[parseInt(days)+1];
             td.style.backgroundColor = color;
         }else{
             alert("Favor, informar uma data constante no calnedario");
