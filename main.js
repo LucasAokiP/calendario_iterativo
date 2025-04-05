@@ -21,4 +21,28 @@ function colorirDia(){
 
     var elementos = document.querySelectorAll('td');
 
+    //contador de cores utilizadas
+    var contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
+
+    //loop para verificar estilo de cada celula e conta quantas tem cores e quais
+    for(let i = 0;i < elementos.length;i++){
+        //obtem o estilo aplicado do elemnto atual
+        var estilo = window.getComputedStyle(elementos[i]);
+        //obtem a cor de fundo atual da celula
+        var corEstilo = estilo.backgroundColor;
+        //verifica a cor e incrementa o contador corrspondente
+        if(corEstilo === "rgb(173, 216, 230)" || corEstilo === "lightblue"){
+            contadorAzul++;
+        }
+        else if(corEstilo === "rgb(152, 251, 152)" || corEstilo === "palegreen"){
+            contadorVerde++;
+        }
+        else if(corEstilo === "rgb(255, 182, 193)" || corEstilo === "lightpink"){
+            contadorRosa++;
+        }
+        else if(corEstilo === "rgb(106, 90, 205)" || corEstilo === "slateblue"){
+            contadorRoxo++;
+        }
+    }
+
 }
